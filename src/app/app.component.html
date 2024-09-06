@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+</head>
+<body>
+  <app-date-pickers></app-date-pickers>
+  <app-dia-actual></app-dia-actual>
+  <app-month-year></app-month-year>
+  <app-formato-mes></app-formato-mes>
+
+
+  <div>
+    <p>Nombre ingresado: {{ name }}</p>
+    <button mat-fab color="primary" (click)="openDialog()">
+      +
+    </button>
+  </div>
+
+  <app-tabla-config></app-tabla-config>
+
+
+
+  <app-stepper-config></app-stepper-config>
+</body>
+</html>
+
+<router-outlet></router-outlet>
